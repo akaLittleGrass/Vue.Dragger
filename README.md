@@ -1,5 +1,7 @@
 # vuedragger
 
+## Our company often needs to view AI results on a panel, usually a image, so I made this component
+
 ## Project setup
 ```
 npm install
