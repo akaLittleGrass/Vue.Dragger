@@ -1,10 +1,17 @@
 {
-  "name": "vuedraggable",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vuedragger",
+  "version": "1.0.0",
+  "description": "a vue component used to drag and zoom something",
+  "main": "library/VueDragger.umd.min.js",
+  "unpkg": "library/VueDragger.umd.min.js",
+  "author": "LittleGrass Wei",
+  "license": "MIT",
+  "keywords": ["vue", "drag"],
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name VueDragger --dest library src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -26,8 +33,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "plugin:vue/essential"
     ],
     "rules": {},
     "parserOptions": {

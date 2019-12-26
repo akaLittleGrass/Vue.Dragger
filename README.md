@@ -1,4 +1,4 @@
-# vuedraggable
+# vuedragger
 
 ## Project setup
 ```

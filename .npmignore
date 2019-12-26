@@ -2,7 +2,11 @@
 
 node_modules
 dist
-library
+public
+src
+
+vue.config.js
+babel.config.js
 
 # local env files
 .env.local
@@ -21,3 +25,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+*.map
+*.html

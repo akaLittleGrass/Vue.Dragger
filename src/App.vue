@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="dragWrapper">
+      <VueDragger :parentLimitation="true" :areaLimits="{}" :w="200" :h="200">
+        <img class="imageOnshow" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572430978729&di=26b1e8e4e3ce9b49779c208a3918c42c&imgtype=0&src=http%3A%2F%2Fphoto.orsoon.com%2F180307%2F180307_62%2FVXpgbcJH9H_small.jpg">
+      </VueDragger>
+      <VueDragger :parentLimitation="true" :areaLimits="{}" :w="200" :h="200">
+        <img class="imageOnshow" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572430978729&di=26b1e8e4e3ce9b49779c208a3918c42c&imgtype=0&src=http%3A%2F%2Fphoto.orsoon.com%2F180307%2F180307_62%2FVXpgbcJH9H_small.jpg">
+      </VueDragger>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import VueDragger from './components/VueDragger';
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    VueDragger
+  },
+  mounted() {
+
   }
 }
 </script>
@@ -23,6 +31,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
+}
+.dragWrapper{
+  width: 98%;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #ddd;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #000;
+  position: relative;
+}
+.imageOnshow{
+  width: 100%;
 }
 </style>
