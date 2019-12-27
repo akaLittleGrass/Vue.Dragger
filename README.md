@@ -1,30 +1,14 @@
 # vuedragger
 Our company often needs to view AI results on a panel, usually an image, so I made this component
 
-## Project setup
+## Basic usage
 ```
-npm install
+$ npm install vuedragger --save
 ```
+Register the component:    
+```
+import Vue from 'vue';
+import VueDragger from 'vuedragger';
 
-### Compiles and hot-reloads for development
+Vue.component('VueDragger', VueDragger);
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -49,6 +49,27 @@ export default {
         zIndex: {
             type: Number,
             default: 10
+        },
+        defaultPosition: {
+            type: Object,
+            default: function () {
+                return {
+                    top: 0,
+                    left: 0
+                }
+            }
+        },
+        useGrid: {
+            type: Boolean,
+            default: false
+        },
+        gridX: {
+            type: Number,
+            default: 100
+        },
+        gridY: {
+            type: Number,
+            default: 100
         }
     },
     data: function () {
@@ -65,6 +86,8 @@ export default {
     created: function () {
         this.toDoDrag = false;
         this.toDoZoom = false;
+        this.top = this.defaultPosition.top;
+        this.left = this.defaultPosition.left;
         this.startPosition = {
             mouseX: 0,
             mouseY: 0
@@ -112,8 +135,20 @@ export default {
             if (!this.toDoDrag) return;
             const pageX = e.pageX;
             const pageY = e.pageY;
-            this.newTop = this.startPosition.top + pageY - this.startPosition.mouseY;
-            this.newLeft = this.startPosition.left + pageX - this.startPosition.mouseX;
+            let rawTop = this.startPosition.top + pageY - this.startPosition.mouseY;
+            let rawLeft = this.startPosition.left + pageX - this.startPosition.mouseX;
+            if (this.useGrid) {
+                const gridX = this.gridX;
+                const gridY = this.gridY;
+                let diffTop = rawTop - Math.floor(rawTop / gridY) * gridY;
+                let diffLeft = rawLeft - Math.floor(rawLeft / gridX) * gridX;
+                if (diffTop > (gridY / 2)) diffTop = diffTop - gridY;
+                if (diffLeft > (gridX / 2)) diffLeft = diffLeft - gridX;
+                rawTop = rawTop - diffTop;
+                rawLeft = rawLeft - diffLeft;
+            }
+            this.newTop = rawTop;
+            this.newLeft = rawLeft;
             this.$emit('moving', {
                 top: this.top,
                 left: this.left
