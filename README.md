@@ -143,13 +143,13 @@ Parameters: Original event handler
 
 Called when the element was clicked
 ```html
-<VueDragger @clicked="clickHandle">
+<VueDragger @clicked="clickedHandle">
 ```
 
 #### move
 Parameters: {
-  top: XXX,
-  left: XXX
+  top: xxx,
+  left: xxx
 }
 
 Called when the element move
