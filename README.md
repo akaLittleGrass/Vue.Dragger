@@ -139,7 +139,7 @@ Define the height of the grid
 ### Events
 
 #### clicked
-Parameters: Original event handler
+Parameters: Original handler
 
 Called when the element was clicked
 ```html
@@ -147,10 +147,7 @@ Called when the element was clicked
 ```
 
 #### move
-Parameters: {
-  top: xxx,
-  left: xxx
-}
+Parameters: `{ top: xxx, left: xxx }`
 
 Called when the element move
 ```html
