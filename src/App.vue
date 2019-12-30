@@ -4,7 +4,7 @@
       <VueDragger :parentLimitation="true" :areaLimits="{}" :w="200" :h="200">
         <img class="imageOnshow" :src="imageSrc">
       </VueDragger>
-      <VueDragger :parentLimitation="true" :useZoom="true" :defaultPosition="{top: 200, left: 200}" :areaLimits="{}" :w="200" :h="200">
+      <VueDragger :parentLimitation="true" :useZoom="true" :defaultPosition="{top: 200, left: 200}" :areaLimits="{minTop: 200, minLeft: 200, minBottom: 200, minRight: 200}" :w="200" :h="200">
         <img class="imageOnshow" :src="imageSrc">
       </VueDragger>
        <VueDragger :parentLimitation="true" :useZoom="false" :defaultPosition="{top: 400, left: 400}" :useGrid="true" :areaLimits="{}" :w="200" :h="200">
@@ -20,7 +20,7 @@ export default {
   name: 'app',
   data: function () {
     return {
-      imageSrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572430978729&di=26b1e8e4e3ce9b49779c208a3918c42c&imgtype=0&src=http%3A%2F%2Fphoto.orsoon.com%2F180307%2F180307_62%2FVXpgbcJH9H_small.jpg"
+      imageSrc: "https://i.loli.net/2019/12/30/OqSwopnYmDCaitU.jpg"
     }
   },
   components: {
