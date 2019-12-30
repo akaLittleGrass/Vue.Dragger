@@ -2,18 +2,18 @@
 Our company often needs to view AI results on a panel, usually an image, so I made this component
 
 ## Basic usage
-```
+```bash
 $ npm install vuedragger --save
 ```
 Register the component:    
-```
+```js
 import Vue from 'vue';
 import VueDragger from 'vuedragger';
 
 Vue.component('vue-dragger', VueDragger);
 ```
 To use:
-```
+```vue
 <template>
   <div id="app">
     <VueDragger :parentLimitation="true" :useZoom="false" :defaultPosition="{top: 400, left: 400}" :useGrid="true" :w="200" :h="200">
@@ -42,7 +42,7 @@ Required: `false`,<br>
 Default: `100`
 
 Define the width of the element
-```
+```html
 <VueDragger :w="200">
 ```
 
@@ -52,7 +52,7 @@ Required: `false`,<br>
 Default: `100`
 
 Define the height of the element
-```
+```html
 <VueDragger :h="200">
 ```
 
@@ -62,7 +62,7 @@ Required: `false`,<br>
 Default: `{ top: 0, left: 0 }`
 
 Define the defaultPosition of the element
-```
+```html
 <VueDragger :defaultPosition="{top: 200, left: 200}">
 ```
 
@@ -72,7 +72,7 @@ Required: `false`,<br>
 default: `true`
 
 Define whether the element can cross the boundary of its parent element
-```
+```html
 <VueDragger :parentLimitation="false">
 ```
 
@@ -82,7 +82,7 @@ Required: `false`,<br>
 Default: `{ minTop: null, maxTop: null, minRight: null, maxRight: null, minBottom: null, maxBottom: null, minLeft: null, maxLeft: null }`
 
 Define the scope that the element can move
-```
+```html
 <VueDragger :defaultPosition="{ minTop: 100, maxTop: 100, minRight: 100, maxRight: 100, minBottom: 100, maxBottom: 100, minLeft: 100, maxLeft: 100 }">
 ```
 
@@ -92,7 +92,7 @@ Required: `false`,<br>
 default: `true`
 
 Enable the element to zoom by scrolling
-```
+```html
 <VueDragger :useZoom="false">
 ```
 
@@ -102,7 +102,7 @@ Required: `false`,<br>
 default: `10`
 
 Define z-index of the element
-```
+```html
 <VueDragger :zIndex="11">
 ```
 
@@ -112,7 +112,7 @@ Required: `false`,<br>
 default: `false`
 
 Define weather the element should snap to the grid
-```
+```html
 <VueDragger :useGrid="true">
 ```
 
@@ -122,7 +122,7 @@ Required: `false`,<br>
 default: `100`
 
 Define the width of the grid
-```
+```html
 <VueDragger :gridX="150">
 ```
 
@@ -132,7 +132,7 @@ Required: `false`,<br>
 default: `100`
 
 Define the height of the grid
-```
+```html
 <VueDragger :gridY="150">
 ```
 
@@ -142,7 +142,7 @@ Define the height of the grid
 Parameters: Original event handler
 
 Called when the element was clicked
-```
+```html
 <VueDragger @clicked="clickHandle">
 ```
 
@@ -153,7 +153,7 @@ Parameters: {
 }
 
 Called when the element move
-```
+```html
 <VueDragger @clicked="moveHandle">
 ```
 
