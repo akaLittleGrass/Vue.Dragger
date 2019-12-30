@@ -43,7 +43,7 @@ export default {
 }
 .dragWrapper{
   width: 98%;
-  height: 700px;
+  height: 800px;
   margin: 0 auto;
   background-color: #ddd;
   border-radius: 3px;

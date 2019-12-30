@@ -1,12 +1,12 @@
 {
   "name": "vuedragger",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "a vue component used to drag and zoom something",
   "main": "library/VueDragger.umd.min.js",
   "unpkg": "library/VueDragger.umd.min.js",
   "author": "LittleGrass Wei",
   "license": "MIT",
-  "keywords": ["vue", "drag"],
+  "keywords": ["vue", "draggable"],
   "private": false,
   "scripts": {
     "dev": "vue-cli-service serve",

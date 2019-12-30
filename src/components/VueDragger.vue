@@ -144,12 +144,12 @@ export default {
                 let diffLeft = rawLeft - Math.floor(rawLeft / gridX) * gridX;
                 if (diffTop > (gridY / 2)) diffTop = diffTop - gridY;
                 if (diffLeft > (gridX / 2)) diffLeft = diffLeft - gridX;
-                rawTop = rawTop - diffTop;
-                rawLeft = rawLeft - diffLeft;
+                rawTop -= diffTop;
+                rawLeft -= diffLeft;
             }
             this.newTop = rawTop;
             this.newLeft = rawLeft;
-            this.$emit('moving', {
+            this.$emit('move', {
                 top: this.top,
                 left: this.left
             });
