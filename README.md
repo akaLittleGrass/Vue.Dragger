@@ -1,7 +1,7 @@
 # vuedragger
 Our company often needs to view AI results on a panel, usually an image, so I encapsulated this component
 <div align='center'>
- <img src='https://i.loli.net/2019/12/30/CGk1ZaENQiRh5od.gif' width='400px' height='300px'/>
+ <img src='https://i.loli.net/2019/12/30/CGk1ZaENQiRh5od.gif' width='680px' height='400px'/>
 </div>
 
 ## Basic usage
