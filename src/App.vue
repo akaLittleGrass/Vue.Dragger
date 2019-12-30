@@ -49,6 +49,7 @@ export default {
   border-radius: 3px;
   box-shadow: 0 0 10px #000;
   position: relative;
+  overflow: hidden;
 }
 .imageOnshow{
   width: 100%;
