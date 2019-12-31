@@ -1,5 +1,5 @@
 # vuedragger
-Our company often needs to view AI results on a panel, usually an image, so I encapsulated this component
+Our company often needs to view AI results on a panel so I encapsulated this component,it can be used to drag and zoom something
 <div align='center'>
  <img src='https://i.loli.net/2019/12/30/CGk1ZaENQiRh5od.gif' width='600px' height='400px'/>
 </div>
@@ -19,7 +19,7 @@ To use:
 ```vue
 <template>
   <div id="app">
-    <VueDragger :parentLimitation="true" :useZoom="false" :defaultPosition="{top: 400, left: 400}" :useGrid="true" :w="200" :h="200">
+    <VueDragger :parentLimitation="true" :useZoom="false" :defaultPosition="{ top: 400, left: 400 }" :useGrid="true" :w="200" :h="200">
       <h1>233333</h1>
     </VueDragger>
   </div>
@@ -66,7 +66,7 @@ Default: `{ top: 0, left: 0 }`
 
 Define the defaultPosition of the element
 ```html
-<VueDragger :defaultPosition="{top: 200, left: 200}">
+<VueDragger :defaultPosition="{ top: 200, left: 200 }">
 ```
 
 #### parentLimitation
