@@ -1,7 +1,7 @@
 # vuedragger
 Our company often needs to view AI results on a panel so I encapsulated this component,it can be used to drag and zoom something
 <div align='center'>
- <img src='https://i.loli.net/2019/12/30/CGk1ZaENQiRh5od.gif' width='600px' height='400px'/>
+ <img src='https://i.loli.net/2020/01/07/KtP1T9h7vwBuOeb.gif' width='600px' height='400px'/>
 </div>
 
 ## Basic usage
