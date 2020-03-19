@@ -39,9 +39,10 @@ export default {
 
 ### Props
 
+Each prop has its default value, you may also not to set them
+
 #### w
 Type: `Number`,<br>
-Required: `false`,<br>
 Default: `100`
 
 Define the width of the element
@@ -51,7 +52,6 @@ Define the width of the element
 
 #### h
 Type: `Number`,<br>
-Required: `false`,<br>
 Default: `100`
 
 Define the height of the element
@@ -61,7 +61,6 @@ Define the height of the element
 
 #### defaultPosition
 Type: `Object`,<br>
-Required: `false`,<br>
 Default: `{ top: 0, left: 0 }`
 
 Define the defaultPosition of the element
@@ -71,7 +70,6 @@ Define the defaultPosition of the element
 
 #### parentLimitation
 type: `Boolean`, <br>
-Required: `false`,<br>
 default: `true`
 
 Define whether the element can cross the boundary of its parent element
@@ -79,19 +77,17 @@ Define whether the element can cross the boundary of its parent element
 <VueDragger :parentLimitation="false">
 ```
 
-### areaLimits
+#### areaLimits
 Type: `Object`,<br>
-Required: `false`,<br>
 Default: `{ minTop: null, maxTop: null, minRight: null, maxRight: null, minBottom: null, maxBottom: null, minLeft: null, maxLeft: null }`
 
 Define the scope that the element can move
 ```html
-<VueDragger :defaultPosition="{ minTop: 100, maxTop: 100, minRight: 100, maxRight: 100, minBottom: 100, maxBottom: 100, minLeft: 100, maxLeft: 100 }">
+<VueDragger :areaLimits="{ minTop: 100, maxTop: 100, minRight: 100, maxRight: 100, minBottom: 100, maxBottom: 100, minLeft: 100, maxLeft: 100 }">
 ```
 
-### useZoom
+#### useZoom
 type: `Boolean`,<br>
-Required: `false`,<br>
 default: `true`
 
 Enable the element to zoom by scrolling
@@ -99,9 +95,8 @@ Enable the element to zoom by scrolling
 <VueDragger :useZoom="false">
 ```
 
-### zIndex
+#### zIndex
 type: `Number`,<br>
-Required: `false`,<br>
 default: `10`
 
 Define z-index of the element
@@ -111,7 +106,6 @@ Define z-index of the element
 
 ### useGrid
 type: `Boolean`,<br>
-Required: `false`,<br>
 default: `false`
 
 Define weather the element should snap to the grid
@@ -121,7 +115,6 @@ Define weather the element should snap to the grid
 
 ### gridX
 type: `Number`,<br>
-Required: `false`,<br>
 default: `100`
 
 Define the width of the grid
@@ -131,7 +124,6 @@ Define the width of the grid
 
 ### gridY
 type: `Number`,<br>
-Required: `false`,<br>
 default: `100`
 
 Define the height of the grid
