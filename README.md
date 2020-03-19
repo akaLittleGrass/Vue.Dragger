@@ -4,18 +4,12 @@ My team often gets some requirements such as developing a panel used to view AI 
  <img src='https://i.loli.net/2020/01/07/KtP1T9h7vwBuOeb.gif' width='600px' height='400px'/>
 </div>
 
-## Basic usage
+## Usage
 ```bash
 $ npm install vuedragger --save
+```    
 ```
-Register the component:    
-```js
-import Vue from 'vue';
-import VueDragger from 'vuedragger';
-
-Vue.component('vue-dragger', VueDragger);
-```
-To use:
+Register in Vue and to do:
 ```vue
 <template>
   <div id="app">
