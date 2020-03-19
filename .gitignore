@@ -3,7 +3,7 @@
 node_modules
 dist
 lib
-packge-lock.json
+package-lock.json
 yarn.lock
 
 
