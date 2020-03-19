@@ -3,6 +3,9 @@
 node_modules
 dist
 lib
+packge-lock.json
+yarn.lock
+
 
 # local env files
 .env.local
