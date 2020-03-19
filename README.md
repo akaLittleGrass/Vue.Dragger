@@ -8,7 +8,7 @@ My team often gets some requirements such as developing a panel used to view AI 
 ```bash
 $ npm install vuedragger --save
 ```    
-```
+
 Register in Vue and to do:
 ```vue
 <template>
