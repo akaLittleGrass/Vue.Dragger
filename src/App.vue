@@ -2,13 +2,13 @@
   <div id="app">
     <div class="dragWrapper">
       <VueDragger :parentLimitation="true" :areaLimits="{}" :w="200" :h="200">
-        <img class="imageOnshow" :src="imageSrc">
+        <img class="imageShowed" :src="imageSrc">
       </VueDragger>
       <VueDragger :parentLimitation="true" :useZoom="true" :defaultPosition="{top: 200, left: 200}" :areaLimits="{minTop: 200, minLeft: 200, minBottom: 200, minRight: 200}" :w="200" :h="200">
-        <img class="imageOnshow" :src="imageSrc">
+        <img class="imageShowed" :src="imageSrc">
       </VueDragger>
        <VueDragger :parentLimitation="true" :useZoom="false" :defaultPosition="{top: 400, left: 400}" :useGrid="true" :areaLimits="{}" :w="200" :h="200">
-        <img class="imageOnshow" :src="imageSrc">
+        <img class="imageShowed" :src="imageSrc">
       </VueDragger>
     </div>
   </div>
@@ -51,7 +51,7 @@ export default {
   position: relative;
   overflow: hidden;
 }
-.imageOnshow{
+.imageShowed{
   width: 100%;
 }
 </style>
