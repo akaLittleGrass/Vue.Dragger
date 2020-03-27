@@ -98,7 +98,7 @@ Define z-index of the element
 <VueDragger :zIndex="11">
 ```
 
-### useGrid
+#### useGrid
 type: `Boolean`,<br>
 default: `false`
 
@@ -107,7 +107,7 @@ Define weather the element should snap to the grid
 <VueDragger :useGrid="true">
 ```
 
-### gridX
+#### gridX
 type: `Number`,<br>
 default: `100`
 
@@ -116,7 +116,7 @@ Define the width of the grid
 <VueDragger :gridX="150">
 ```
 
-### gridY
+#### gridY
 type: `Number`,<br>
 default: `100`
 
