@@ -4,7 +4,11 @@ My team often gets some requirements such as developing a panel used to view AI 
  <img src='https://i.loli.net/2020/01/07/KtP1T9h7vwBuOeb.gif' width='600px' height='400px'/>
 </div>
 
-## Usage
+## Features 🥢🍚
+- Tiny size(7.5KB gzipped ~ 📦)
+- Easy to use, the source code is also easy to understand 🛠
+
+## Usage 📝
 ```bash
 $ npm install vuedragger --save
 ```    
