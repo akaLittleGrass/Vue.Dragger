@@ -37,7 +37,7 @@ export default {
 
 ### Props
 
-Each prop has its default value, you may also not to set them
+Each prop has its default value, you may also not to set them 🍌
 
 #### w
 Type: `Number`,<br>
