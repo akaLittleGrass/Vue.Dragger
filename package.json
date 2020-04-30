@@ -1,6 +1,6 @@
 {
   "name": "vuedragger",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "a vue component used to drag and zoom something",
   "main": "lib/VueDragger.umd.min.js",
   "unpkg": "lib/VueDragger.umd.min.js",

@@ -5,7 +5,7 @@ My team often gets some requirements such as developing a panel used to view AI 
 </div>
 
 ## Features 🥢🍚
-- Tiny size(7.5KB gzipped ~ 📦)
+- Tiny size(7.5KB gzipped 📦)
 - Easy to use, the source code is also easy to understand 🛠
 
 ## Usage 📝
@@ -17,7 +17,7 @@ Register in Vue and to do:
 ```vue
 <template>
   <div id="app">
-    <VueDragger :parentLimitation="true" :useZoom="false" :defaultPosition="{ top: 400, left: 400 }" :useGrid="true" :w="200" :h="200">
+    <VueDragger :useZoom="true" :useGrid="true" :defaultPosition="{ top: 400, left: 400 }" :w="200" :h="200">
       <h1>233333</h1>
     </VueDragger>
   </div>
