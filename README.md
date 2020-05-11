@@ -6,7 +6,7 @@ My team often gets some requirements such as developing a panel used to view AI 
 
 ## Features 🥢🍚
 - Tiny size(7.5KB gzipped 📦)
-- Easy to use, the source code is also easy to understand 🛠
+- Easy to use and understand 🛠
 
 ## Usage 📝
 ```bash
