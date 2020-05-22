@@ -1,8 +1,12 @@
-import { shallowMount, mount, createWrapper } from '@vue/test-utils';
-import VueDragger from '@/components/VueDragger';
+import { mount } from '@vue/test-utils';
+import App from '@/App';
 
-describe('vueDragger component', () => {
+describe('VueDragger', () => {
   it('mount the component', () => {
-    //coming soon
+    const wrapper = mount(App);
+    expect(wrapper.contains('.vueDragger')).toBe(true);
+    
+    const VueDragger = wrapper.find('.vueDragger');
+    expect(VueDragger.name()).toBe('vueDragger');
   })
 })
