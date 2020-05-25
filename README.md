@@ -10,7 +10,7 @@ My team often gets some requirements such as developing a panel used to view AI 
 
 ## Usage 📝
 ```bash
-$ npm install vuedragger --save
+$ npm i vuedragger --save
 ```    
 
 Register in Vue and to do:
